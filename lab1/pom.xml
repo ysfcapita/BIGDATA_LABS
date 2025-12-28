@@ -43,10 +43,10 @@
             <configuration>
                 <archive>
                     <manifest>
-                        <mainClass>edu.supmti.hadoop.HadoopFileStatus</mainClass>
+                        <mainClass>edu.supmti.hadoop.ReadHDFS</mainClass>
                     </manifest>
                 </archive>
-                <finalName>HadoopFileStatus</finalName>
+                <finalName>ReadHDFS</finalName>
             </configuration>
         </plugin>
     </plugins>
