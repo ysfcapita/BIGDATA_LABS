@@ -43,10 +43,10 @@
             <configuration>
                 <archive>
                     <manifest>
-                        <mainClass>edu.supmti.hadoop.ReadHDFS</mainClass>
+                        <mainClass>edu.supmti.hadoop.HDFSWrite</mainClass>
                     </manifest>
                 </archive>
-                <finalName>ReadHDFS-with-args</finalName>
+                <finalName>WriteHDFS</finalName>
             </configuration>
         </plugin>
     </plugins>
