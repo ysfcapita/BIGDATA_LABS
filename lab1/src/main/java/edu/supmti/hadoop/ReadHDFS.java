@@ -9,7 +9,7 @@ public class ReadHDFS {
     public static void main(String[] args) throws IOException{
         Configuration conf = new Configuration();
         FileSystem fs = FileSystem.get(conf);
-        Path nomcomplet = new Path("/user/root/input/achats.txt");
+        Path nomcomplet = new Path(args[0]);
         FSDataInputStream inStream = fs.open(nomcomplet);
         InputStreamReader isr = new InputStreamReader(inStream);
         BufferedReader br = new BufferedReader(isr);

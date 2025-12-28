@@ -46,7 +46,7 @@
                         <mainClass>edu.supmti.hadoop.ReadHDFS</mainClass>
                     </manifest>
                 </archive>
-                <finalName>ReadHDFS</finalName>
+                <finalName>ReadHDFS-with-args</finalName>
             </configuration>
         </plugin>
     </plugins>
