@@ -12,12 +12,12 @@ public class HadoopFileStatus {
         FileSystem fs;
         try {
             fs = FileSystem.get(conf);
-            Path filepath = new Path("/user/root/input", "purchases.txt");
-            FileStatus status = fs.getFileStatus(filepath);
-            if(!fs.exists(filepath)){
+            if(args.length < 1){
                 System.out.println("File does not exists");
                 System.exit(1);
             }
+            Path filepath = new Path(args[0]);
+            FileStatus status = fs.getFileStatus(filepath);
             System.out.println(Long.toString(status.getLen())+" bytes");
             System.out.println("File Name: "+filepath.getName());
             System.out.println("File Size: "+status.getLen());
@@ -36,7 +36,6 @@ public class HadoopFileStatus {
                 }
                 System.out.println();
             }
-            fs.rename(filepath, new Path("/user/root/input", "achats.txt")) ;
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
