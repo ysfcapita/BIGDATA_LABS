@@ -1,2 +1,7 @@
 lien-github-YoussefBELGHITI.txt
 .vscode
+
+**/target/
+
+.vscode/
+**/.vscode/
