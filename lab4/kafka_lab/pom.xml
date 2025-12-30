@@ -29,6 +29,11 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.36</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-streams</artifactId>
+            <version>${kafka.version}</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -53,10 +58,10 @@
                 </descriptorRefs>
                 <archive>
                 <manifest>
-                    <mainClass>edu.supmti.kafka.EventConsumer</mainClass>
+                    <mainClass>edu.supmti.kafka.WordCountApp</mainClass>
                 </manifest>
                 </archive>
-                    <finalName>kafka-consumer-app</finalName>
+                    <finalName>kafka-wordcount-app</finalName>
                 </configuration>
                 <executions>
                 <execution>
